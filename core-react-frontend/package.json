@@ -2,6 +2,7 @@
   "name": "core",
   "version": "0.1.0",
   "private": true,
+  "proxy":"http://localhost:5000/",
   "dependencies": {
     "cra-template": "1.2.0",
     "git": "^0.1.5",
@@ -10,8 +11,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start --ignore-client",
+    "build": "react-scripts build --ignore-client",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
